@@ -1,0 +1,122 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+:root {
+    --primero: #ffffff;
+    --segundo: #00171f;
+    --tercero: #003459;
+    --cuarto: #007ea7;
+    --quinto: #00a8e8;
+}
+
+h1 {
+    font-size: 40px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom, #ffffff 0%, #ffffff 20%, #00171f 20%, #00171f 100%);
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+}
+
+.caja1 {
+    display: flex;
+    min-width: 925px;
+    margin: auto;
+    height: auto;
+    padding: 4%;
+    justify-content: space-around;
+    align-items: center;
+    background-color: var(--primero);
+    border-radius: 20px;
+    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.3);
+}
+
+.caja1>img {
+    width: 55%;
+    height: auto;
+}
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: 0px 3%;
+    width: 40%;
+    align-items: center;
+    justify-content: center;
+}
+
+.formulario > img {
+    width: 40%;
+}
+
+.formulario h2 {
+    text-align: center;
+    font-size: 50px;
+    margin: 0px 0 20px 0;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 500;
+    color: var(--segundo);
+}
+
+.f_cuenta, .f_contraseña {
+    width: 100%;
+    color: var(--segundo);
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: 100;
+    font-size: 20px;
+    text-align: left;
+}
+
+.cuadro {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: 200;
+    font-size: 15px;
+}
+
+.formulario a{
+    text-decoration: none;
+    color: var(--tercero);
+    font-family: 'Rubik', sans-serif;
+    font-weight: 200;
+}
+
+.formulario a:hover{
+    text-decoration: underline;
+}
+
+.login{
+    background-color: var(--segundo);
+    font-family: 'Roboto Condensed', sans-serif;
+    color: var(--primero);
+    width: 100%;
+    height: 40px;
+    font-size: 20px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    margin-bottom: 10px;
+}
+
+.login:hover{
+    background-color: var(--quinto)
+}
