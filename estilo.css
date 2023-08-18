@@ -45,14 +45,6 @@ body {
     background-color: var(--primero);
     border-radius: 20px;
     box-shadow: 0 2px 20px rgba(0, 0, 0, 0.3);
-    opacity: 0;
-    transition: opacity 0.5s ease, transform 0.5s ease;
-    transform: translateY(20px);
-}
-
-.caja1.aparecer {
-    opacity: 1; /* Hacer que la caja sea visible */
-    transform: translateY(0); /* Eliminar el desplazamiento */
 }
 
 .caja1>img {
