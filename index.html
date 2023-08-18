@@ -12,7 +12,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&family=Rubik:wght@400;500&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="caja1">
+    <div class="caja1 aparecer">
         <img src="img/account.svg">
         <form class="formulario">
             <img src="img/logo.png">
@@ -33,4 +33,8 @@
         </form>
     </div>
 </body>
+<script>document.addEventListener('DOMContentLoaded', function() {
+    const caja = document.querySelector('.caja1');
+    caja.classList.add('aparecer');
+});</script>
 </html>
