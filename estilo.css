@@ -120,3 +120,7 @@ body {
 .login:hover{
     background-color: var(--quinto)
 }
+
+.capcha{
+    margin-bottom: 20px;
+}
