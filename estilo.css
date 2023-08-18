@@ -90,15 +90,6 @@ body {
     font-weight: 100;
     font-size: 20px;
 }
-.pipo{
-    line-height: 40px;
-    position: absolute;
-    margin: 0;
-    font-size: 20px;
-    transform: translate(-35px);
-    cursor: pointer;
-    color: var(--segundo);
-}
 
 .cuadro {
     width: 100%;
@@ -114,12 +105,23 @@ body {
     border-left: 5px solid var(--quinto);
 }
 
+.pipo{
+    line-height: 40px;
+    position: absolute;
+    margin: 0;
+    font-size: 20px;
+    transform: translate(-35px);
+    cursor: pointer;
+    color: var(--segundo);
+}
+
 .formulario a{
     text-decoration: none;
     color: var(--tercero);
     font-family: 'Rubik', sans-serif;
     font-weight: 200;
 }
+
 
 .formulario a:hover{
     text-decoration: underline;
