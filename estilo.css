@@ -128,3 +128,12 @@ body {
 .capcha{
     margin-bottom: 20px;
 }
+
+.pipo{
+    position: absolute;
+    top: 50%;
+    font-size: 20px;
+    transform: translate(-30px);
+    cursor: pointer;
+    color: var(--segundo);
+}

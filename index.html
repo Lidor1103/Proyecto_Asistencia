@@ -7,6 +7,7 @@
     <title>Asistencia</title>
     <script src="https://www.google.com/recaptcha/api.js" async defer></script>
     <link rel="stylesheet" href="estilo.css">
+    <script src="https://kit.fontawesome.com/3bcd58867e.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link rel="icon" href="img/icono.png" type="image/png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -28,7 +29,10 @@
             </div>
             <div class="f_contraseña">
                 <label for="Contraseña">Contraseña:</label>
-                <input class="cuadro" type="password" name="Contraseña" id="Contreseña" placeholder="Contraseña">
+                <input class="cuadro" type="password" name="Contraseña" id="Contraseña" placeholder="Contraseña">
+                <span class="eye-icon" id="verContraseña">
+                    <i class="pipo fa-solid fa-eye" id="icono"></i>
+                </span>
             </div>
             <div class="capcha">
                 <div class="g-recaptcha" data-sitekey="6LeHIbgnAAAAAJRbmU1Lv3uHfGCjz552QwAa6p1y"></div>
@@ -39,4 +43,22 @@
     </div>
 </body>
 
+<script>
+    const verContraseña = document.querySelector('#verContraseña');
+    const contraseña = document.querySelector('#Contraseña');
+    const cambio = document.querySelector('#icono');
+
+    verContraseña.addEventListener('click', function () {
+        if (contraseña.type === 'password') {
+            contraseña.type = 'text';
+            cambio.classList.remove("fa-eye")
+            cambio.classList.add("fa-eye-slash")
+        } else {
+            contraseña.type = 'password';
+            cambio.classList.remove("fa-eye-slash");
+        cambio.classList.add("fa-eye");
+        }
+    });
+    
+</script>
 </html>
