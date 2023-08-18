@@ -22,23 +22,21 @@
         <form class="formulario">
             <img src="img/logo.png">
             <h2>BIENVENIDO!</h2>
+            <label for="Correo">Correo electrónico:</label>
             <div class="f_cuenta">
-                <label for="Correo">Correo electrónico:</label>
                 <input class="cuadro" type="email" name="Correo electrónico" id="Correo electrónico"
                     placeholder="E-mail">
             </div>
+            <label for="Contraseña">Contraseña:</label>
             <div class="f_contraseña">
-                <label for="Contraseña">Contraseña:</label>
                 <input class="cuadro" type="password" name="Contraseña" id="Contraseña" placeholder="Contraseña">
-                <span class="eye-icon" id="verContraseña">
-                    <i class="pipo fa-solid fa-eye" id="icono"></i>
-                </span>
+                <i class="pipo fa-solid fa-eye" id="verContraseña"></i>
             </div>
             <div class="capcha">
                 <div class="g-recaptcha" data-sitekey="6LeHIbgnAAAAAJRbmU1Lv3uHfGCjz552QwAa6p1y"></div>
             </div>
             <button class="login">Ingresar</button>
-            <a href="google.com">¿Olvidaste tu contraseña?</p>
+            <a href="https://www.google.com/" target="_blank">¿Olvidaste tu contraseña?</p>
         </form>
     </div>
 </body>
@@ -46,19 +44,19 @@
 <script>
     const verContraseña = document.querySelector('#verContraseña');
     const contraseña = document.querySelector('#Contraseña');
-    const cambio = document.querySelector('#icono');
 
     verContraseña.addEventListener('click', function () {
         if (contraseña.type === 'password') {
             contraseña.type = 'text';
-            cambio.classList.remove("fa-eye")
-            cambio.classList.add("fa-eye-slash")
+            verContraseña.classList.remove("fa-eye")
+            verContraseña.classList.add("fa-eye-slash")
         } else {
             contraseña.type = 'password';
-            cambio.classList.remove("fa-eye-slash");
-        cambio.classList.add("fa-eye");
+            verContraseña.classList.remove("fa-eye-slash");
+            verContraseña.classList.add("fa-eye");
         }
     });
-    
+
 </script>
+
 </html>

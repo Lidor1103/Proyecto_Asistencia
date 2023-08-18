@@ -74,13 +74,30 @@ body {
     color: var(--segundo);
 }
 
-.f_cuenta, .f_contraseña {
+.f_cuenta, label {
     width: 100%;
     color: var(--segundo);
     font-family: 'Roboto Condensed', sans-serif;
     font-weight: 100;
     font-size: 20px;
     text-align: left;
+}
+.f_contraseña{
+    width: 100%;
+    align-items: center;
+    color: var(--segundo);
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: 100;
+    font-size: 20px;
+}
+.pipo{
+    line-height: 38px;
+    position: absolute;
+    margin: 0;
+    font-size: 20px;
+    transform: translate(-35px);
+    cursor: pointer;
+    color: var(--segundo);
 }
 
 .cuadro {
@@ -129,11 +146,3 @@ body {
     margin-bottom: 20px;
 }
 
-.pipo{
-    position: absolute;
-    top: 50%;
-    font-size: 20px;
-    transform: translate(-30px);
-    cursor: pointer;
-    color: var(--segundo);
-}
