@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Asistencia</title>
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
     <link rel="stylesheet" href="estilo.css">
     <link rel="icon" href="img/icono.png" type="image/png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -24,7 +25,9 @@
                 <label for="Contraseña">Contraseña:</label>
                 <input class="cuadro" type="password" name="Contraseña" id="Contreseña" placeholder="Contraseña">
             </div>
-            
+            <div class="capcha">
+                <div class="g-recaptcha" data-sitekey="6LeHIbgnAAAAAJRbmU1Lv3uHfGCjz552QwAa6p1y"></div>
+            </div>
             <button class="login">Ingresar</button>
             <a href="google.com">¿Olvidaste tu contraseña?</p>
         </form>
