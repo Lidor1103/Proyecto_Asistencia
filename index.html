@@ -7,6 +7,7 @@
     <title>Asistencia</title>
     <script src="https://www.google.com/recaptcha/api.js" async defer></script>
     <link rel="stylesheet" href="estilo.css">
+    <script src="js/index.js"></script>
     <script src="https://kit.fontawesome.com/3bcd58867e.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link rel="icon" href="img/icono.png" type="image/png">
@@ -19,7 +20,7 @@
 <body>
     <div class="caja1 animate__animated animate__slideInDown">
         <img src="img/account.svg">
-        <form class="formulario">
+        <form class="formulario" method="post" onsubmit="return validarFormulario()">
             <img src="img/logo.png">
             <h2>BIENVENIDO!</h2>
             <label for="Correo">Correo electrónico:</label>
@@ -31,33 +32,13 @@
             <div class="f_contraseña">
                 <input class="cuadro" type="password" name="Contraseña" id="Contraseña" placeholder="Contraseña">
                 <i class="icono fa-solid fa-eye" id="verContraseña"></i>
-                
             </div>
             <div class="capcha">
                 <div class="g-recaptcha" data-sitekey="6LeHIbgnAAAAAJRbmU1Lv3uHfGCjz552QwAa6p1y"></div>
             </div>
-            <button class="login">Ingresar</button>
+            <input class="button login" type="submit" value="Enviar">
             <a href="https://www.google.com/" target="_blank">¿Olvidaste tu contraseña?</p>
         </form>
     </div>
 </body>
-
-<script>
-    const verContraseña = document.querySelector('#verContraseña');
-    const contraseña = document.querySelector('#Contraseña');
-
-    verContraseña.addEventListener('click', function () {
-        if (contraseña.type === 'password') {
-            contraseña.type = 'text';
-            verContraseña.classList.remove("fa-eye")
-            verContraseña.classList.add("fa-eye-slash")
-        } else {
-            contraseña.type = 'password';
-            verContraseña.classList.remove("fa-eye-slash");
-            verContraseña.classList.add("fa-eye");
-        }
-    });
-
-</script>
-
 </html>
