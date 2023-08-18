@@ -95,7 +95,7 @@ body {
 .icono{
     position: absolute;
     font-size: 20px;
-    transform: translate(-15px);
+    transform: scaleX(-1) translate(10px);
     cursor: pointer;
     color: var(--segundo);
     height: 40px;
