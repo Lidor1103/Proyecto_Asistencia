@@ -26,7 +26,7 @@ function validarFormulario() {
 		return false;
 	}
     const completoCaptcha = grecaptcha.getResponse();
-    if (recaptchaResponse === ''){
+    if (completoCaptcha === ''){
         alert('Por favor, complete el reCaptcha.');
         return false;
     }
