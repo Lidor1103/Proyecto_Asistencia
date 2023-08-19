@@ -20,12 +20,12 @@ document.addEventListener('DOMContentLoaded', function () {
 function validarFormulario() {
 	const correo = document.getElementById('Correo electrónico').value;
 	const contraseña = document.getElementById('Contraseña').value;
-    const completoCaptcha = grecaptcha.getResponse();
 
 	if (correo === '' || contraseña === '') {
 		alert('Faltan datos, por favor complete todos los campos antes de enviar el formulario.');
 		return false;
 	}
+    const completoCaptcha = grecaptcha.getResponse();
     if (recaptchaResponse === ''){
         alert('Por favor, complete el reCaptcha.');
         return false;
