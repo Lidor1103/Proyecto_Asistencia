@@ -94,12 +94,12 @@ body {
 
 .icono{
     position: absolute;
-    font-size: 20px;
-    transform: scaleX(-1) translate(10px);
+    font-size: 15px;
+    transform: translate(-10px);
     cursor: pointer;
     color: var(--segundo);
     height: 40px;
-    margin-top: 10px;
+    margin-top: 13px;
 }
 
 .cuadro{
